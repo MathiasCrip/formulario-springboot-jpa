@@ -49,7 +49,7 @@ public class ClienteController {
         if (br.hasErrors()) {
             model.addAttribute("titulo", "Formulario de cliente");
             return "form";
-        }
+        }//redirige a la pagina /listar guardando los cambios con 'redirect:'
         clienteService.guardar(cliente);
         return "redirect:listar";
     }
@@ -59,8 +59,7 @@ public class ClienteController {
 
         if (id > 0) {
             clienteService.eliminar(id);
-        }
-
+        } //redirige a la pagina /listar guardando los cambios con 'redirect:'
         return "redirect:/listar";
     }
 }

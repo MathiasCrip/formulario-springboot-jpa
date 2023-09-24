@@ -13,7 +13,6 @@ import java.util.List;
 @Repository
 public class ClienteDaoImpl implements IClienteDao {
 
-    //¿Cómo funciona entity manager?
     //Entity Manager y contexto de persistencia
     //El entity manager guarda internamente todas las entidades que gestiona y las utiliza
     // como una caché de los datos en la base de datos
