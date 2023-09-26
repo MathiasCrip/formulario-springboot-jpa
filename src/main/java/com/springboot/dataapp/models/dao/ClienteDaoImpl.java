@@ -16,9 +16,9 @@ public class ClienteDaoImpl implements IClienteDao {
     //Entity Manager y contexto de persistencia
     //El entity manager guarda internamente todas las entidades que gestiona y las utiliza
     // como una caché de los datos en la base de datos
-
     @PersistenceContext
     private EntityManager em;
+
     @Override
     public List<Cliente> listar() {
         //creamos una query a la tabla clientes y listamos todos los resultados
